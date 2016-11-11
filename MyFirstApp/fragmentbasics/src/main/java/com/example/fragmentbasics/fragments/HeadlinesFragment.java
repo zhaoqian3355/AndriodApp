@@ -1,4 +1,4 @@
-package com.example.fragmentbasics;
+package com.example.fragmentbasics.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,14 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.fragmentbasics.R;
+
 /**
- * Created by zhaoqian on 16/11/08.
+ * Created by zhaoqian on 16/11/11.
  */
 
-public class ArticleFragment extends Fragment {
+public class HeadlinesFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.article_view,container,false);
+       return inflater.inflate(R.id.headlines_fragment,container,false);
     }
 }
